@@ -54,6 +54,7 @@ void draw_piechart(Data data[], int size) {
     for (int i = 0; i < size; i++) {
         if (hovered == i) {
             DrawCircleSector(start_pos, RADIUS + HOVERED_SIZE, angles[i].start, angles[i].end, SEGMENTS, colors[i % size]);
+            DrawText(data[i].name, 0, 0, 50, WHITE);
         }
         else {
             DrawCircleSector(start_pos, RADIUS, angles[i].start, angles[i].end, SEGMENTS, colors[i % size]);
