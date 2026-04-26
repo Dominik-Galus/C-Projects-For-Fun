@@ -19,7 +19,7 @@ Vector2 trace[TRACE_LEN];
 float l1, l2, phi1, phi2, phi1_d, phi2_d, phi1_dd, phi2_dd, m1, m2;
 int current_trace_length = 0;
 
-Vector2 start_pos = (Vector2){WIDTH / 2, 0};
+Vector2 start_pos = (Vector2){(float)WIDTH / 2, 0};
 
 Vector2 get_end(Vector2 start, float l, float phi) {
     return (Vector2){start.x + l * sinf(phi), start.y + l * cosf(phi)};
